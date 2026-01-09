@@ -1,0 +1,117 @@
+Build a modern, production-ready startup landing website for a product called “Vera”.
+
+Purpose:
+The website is a public launch and marketing site for Vera, an AI-powered skincare compatibility platform that helps users prevent adverse skin reactions and make informed skincare decisions. This is not an app dashboard — it is a startup-style product website designed to attract users, build trust, and drive early sign-ups.
+
+Tech Stack:
+- Next.js (App Router)
+- Tailwind CSS
+- Framer Motion for subtle animations
+- Clean, minimal, premium aesthetic (health + AI + trust)
+- Fully responsive (mobile-first)
+- SEO-friendly structure
+
+Brand Tone:
+- Calm
+- Trustworthy
+- Scientific but easy to understand
+- Dermatology-inspired
+- Ethical AI
+- Avoid hype or exaggerated claims
+
+Pages / Sections to Build:
+
+1. Hero Section
+- Headline:
+  “Know Before You Apply.”
+- Subheading:
+  “Vera analyzes your skin, product ingredients, climate, and personal context to help prevent adverse skin reactions before they happen.”
+- Primary CTA: “Join the Waitlist”
+- Secondary CTA: “How Vera Works”
+- Subtle abstract background visuals (skin, molecules, AI — no faces)
+
+2. Problem Section – “Why Vera Exists”
+Explain clearly:
+- Skincare reactions are common and unpredictable
+- Ingredients behave differently across skin types, climates, and medications
+- Most people rely on trial-and-error
+- Existing skincare apps focus on recommendations, not safety
+Use short bullet points with icons.
+
+3. Solution Section – “What Vera Does”
+Explain the flow:
+- Upload a photo of your skin
+- Share concerns and optional skin history or medication information
+- Enter a product name or upload a product image
+- Vera evaluates compatibility before you apply
+Display this as a clean step-by-step layout.
+
+4. Key Features Section
+Feature cards for:
+- AI Skin Analysis (Computer Vision)
+- Ingredient-Level Compatibility Checks
+- Safety Verdict System: Safe / Caution / Risky
+- Explainable Ingredient Reasoning
+- Climate-Aware Skin Guidance
+- Medication & Sensitivity Awareness
+- Explicit Warnings on Ingredients to Avoid
+- Safer Alternative Product Suggestions
+
+5. Example Output Section
+Create a static mock example:
+- Product: Example Moisturizer
+- Verdict: ⚠️ Caution
+- Why:
+  - Fragrance → irritation risk for sensitive skin
+  - High humidity → increased congestion risk
+- Recommendation:
+  - Use sparingly or switch to a fragrance-free gel-based alternative
+Present this like a clean results card.
+
+6. Why Trust Vera
+Include trust points:
+- Transparent, explainable AI (no black-box decisions)
+- Built to work across diverse skin tones
+- Considers real-world context (climate, history, medication)
+- Privacy-first approach (no selling personal data)
+- Designed to support informed decisions, not replace dermatologists
+
+7. Who Vera Is For
+Audience cards for:
+- Sensitive or reactive skin users
+- Acne-prone individuals
+- People using dermatological treatments
+- Skincare beginners
+- Users living in extreme or changing climates
+
+8. Call to Action Section
+Headline:
+“Stop guessing. Start knowing your skin.”
+Button:
+“Get Early Access to Vera”
+
+9. Footer
+- About Vera
+- Contact
+- Privacy Policy (placeholder)
+- Terms of Service (placeholder)
+- Social links (placeholder)
+
+Design Requirements:
+- Soft, dermatology-inspired color palette (neutrals, muted blues/greens)
+- Rounded cards and clean spacing
+- High readability and accessibility
+- Smooth scroll and subtle Framer Motion animations
+- Use placeholder icons and illustrations where needed
+
+Deliverables:
+- Fully working Next.js project
+- Clean, scalable folder structure
+- Reusable components
+- Ready for deployment
+
+Do NOT:
+- Build authentication
+- Build backend APIs
+- Implement AI logic
+- Use loud colors, gimmicks, or aggressive marketing language

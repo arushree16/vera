@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* HSL Color Palette - Soft, Clinical, Trustworthy */
+  /* Primary: Muted Deep Teal/Green - symbolizing health and nature */
+  --primary: 175 45% 25%;
+  --primary-foreground: 180 30% 96%;
+
+  /* Secondary: Soft Sage/Mint - approachable and calming */
+  --secondary: 170 30% 94%;
+  --secondary-foreground: 175 45% 25%;
+
+  /* Accent: Muted Coral - for alerts/calls to action without being aggressive */
+  --accent: 14 70% 65%;
+  --accent-foreground: 0 0% 100%;
+
+  /* Backgrounds: Very clean off-whites */
+  --background: 180 20% 99%;
+  --foreground: 200 15% 20%;
+
+  /* Cards and Surfaces */
+  --card: 0 0% 100%;
+  --card-foreground: 200 15% 20%;
+
+  /* Muted elements */
+  --muted: 210 20% 96%;
+  --muted-foreground: 210 10% 50%;
+
+  /* Borders */
+  --border: 210 15% 90%;
+  --input: 210 15% 90%;
+  --ring: 175 45% 25%;
+
+  /* Feedback Colors */
+  --destructive: 0 60% 55%;
+  --destructive-foreground: 0 0% 98%;
+
+  /* Radii */
+  --radius: 0.75rem;
+
+  /* Fonts - defined in Tailwind config but variables here for reference */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-tight text-primary;
+  }
+
+  p {
+    @apply leading-relaxed text-muted-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-lg border border-white/40 shadow-xl shadow-primary/5;
+  }
+}
