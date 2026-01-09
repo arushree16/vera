@@ -8,28 +8,27 @@ export function Footer() {
   return (
     <footer className="bg-white border-t border-border/40 py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
-          <div className="md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16">
+          <div className="md:col-span-3">
             <Link href="/" className="inline-block mb-6">
               <img src={logoPngPath} alt="Vera Logo" className="h-10 w-auto" />
             </Link>
             <p className="text-muted-foreground max-w-md leading-relaxed mb-8">
-              Empowering you to make safer, smarter skincare decisions through advanced AI analysis and dermatological data.
+              Empowering you to make safer, smarter skincare decisions through
+              advanced AI analysis and dermatological data.
             </p>
             <div className="flex gap-4">
-              <SocialIcon icon={<Instagram className="w-5 h-5" />} href="https://instagram.com/vera" label="Instagram" />
-              <SocialIcon icon={<Linkedin className="w-5 h-5" />} href="https://linkedin.com/company/vera" label="LinkedIn" />
+              <SocialIcon
+                icon={<Instagram className="w-5 h-5" />}
+                href="https://www.instagram.com/veraskin.in/?igshid=YmMyMTA2M2Y="
+                label="Instagram"
+              />
+              <SocialIcon
+                icon={<Linkedin className="w-5 h-5" />}
+                href="https://linkedin.com/company/vera"
+                label="LinkedIn"
+              />
             </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-foreground mb-6">Platform</h4>
-            <ul className="space-y-4">
-              <FooterLink href="#features">How it Works</FooterLink>
-              <FooterLink href="#science">The Science</FooterLink>
-              <FooterLink href="#pricing">Pricing</FooterLink>
-              <FooterLink href="#faq">FAQ</FooterLink>
-            </ul>
           </div>
 
           <div>
@@ -46,7 +45,8 @@ export function Footer() {
         <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>&copy; {currentYear} Vera Health Inc. All rights reserved.</p>
           <p className="flex items-center gap-1">
-            Made with <Heart className="w-3 h-3 text-red-400 fill-current" /> for healthy skin.
+            Made with <Heart className="w-3 h-3 text-red-400 fill-current" />{" "}
+            for healthy skin.
           </p>
         </div>
       </div>
@@ -54,10 +54,18 @@ export function Footer() {
   );
 }
 
-function SocialIcon({ icon, href, label }: { icon: React.ReactNode; href: string; label: string }) {
+function SocialIcon({
+  icon,
+  href,
+  label,
+}: {
+  icon: React.ReactNode;
+  href: string;
+  label: string;
+}) {
   return (
-    <a 
-      href={href} 
+    <a
+      href={href}
       aria-label={label}
       className="h-10 w-10 flex items-center justify-center rounded-full bg-secondary/30 text-primary hover:bg-primary hover:text-white transition-all duration-300"
     >
@@ -66,11 +74,17 @@ function SocialIcon({ icon, href, label }: { icon: React.ReactNode; href: string
   );
 }
 
-function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+function FooterLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
     <li>
-      <a 
-        href={href} 
+      <a
+        href={href}
         className="text-muted-foreground hover:text-primary transition-colors"
       >
         {children}
